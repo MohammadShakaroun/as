@@ -1,0 +1,29 @@
+.langTitle {
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding-left: 15%;
+  cursor: pointer;
+}
+
+#language {
+  font-size: medium;
+}
+
+.flag {
+  width: 30px !important ;
+  height: auto !important ;
+  cursor: pointer;
+}
+.langFlag {
+  display: flex;
+  flex-direction: row;
+  padding-left: 5%;
+  cursor: pointer;
+}
+
+
+.langFlag:hover{
+  background-color: rgb(206, 206, 206);
+}

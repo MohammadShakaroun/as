@@ -1,0 +1,32 @@
+.team-Sections {
+    padding: 50px 0;
+    width: 700px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .team-Sections h4 {
+    margin: 5px 0;
+  }
+  
+.team-img{
+    height: auto!important;
+    max-width: none!important;
+}
+
+  .team-Sections .team-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    border: #888;
+  }
+  
+  .team-Sections .team {
+    background: transparent;
+    border-radius: 10px;
+  }
+  
+  .team-Sections .team .caption {
+    padding: 10px 0 0;
+    color: #373ca2;
+  }

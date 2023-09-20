@@ -1,0 +1,247 @@
+.blobs-container--row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 50px;
+  flex-wrap: wrap;
+  gap: 30px;
+  row-gap: 50px;
+}
+
+.icon--blob {
+  width: 75px;
+  height: 75px;
+  margin-bottom: 10px;
+}
+
+.square {
+  position: relative;
+  margin: 0 10px;
+  width: 230px;
+  height: 230px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.square span:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid black;
+  border-radius: 32% 58% 69% 43% / 48% 32% 59% 55%;
+  transition: 0.5s;
+  animation: animate_blobs 6s linear infinite;
+}
+
+.linkedin:hover span:nth-child(1) {
+  border: none;
+  background: #111159;
+  cursor: pointer;
+}
+
+.twitter:hover span:nth-child(1) {
+  border: none;
+  background: #111159;
+  cursor: pointer;
+}
+
+.github:hover span:nth-child(1) {
+  border: none;
+  background: #111159;
+  cursor: pointer;
+}
+
+.square span:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid black;
+  border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+  transition: 0.5s;
+  animation: animate_blobs 4s linear infinite;
+}
+
+.linkedin:hover span:nth-child(2) {
+  border: none;
+  background: #111159;
+}
+
+.twitter:hover span:nth-child(2) {
+  border: none;
+  background: #111159;
+}
+
+.github:hover span:nth-child(2) {
+  border: none;
+  background: #111159;
+}
+
+.square span:nth-child(3) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid black;
+  border-radius: 31% 45% 74% 35% / 38% 56% 51% 87%;
+  transition: 0.5s;
+  animation: animate_2_blobs 10s linear infinite;
+}
+
+.linkedin:hover span:nth-child(3) {
+  border: none;
+  background: #111159;
+}
+
+.twitter:hover span:nth-child(3) {
+  border: none;
+  background: #111159;
+}
+
+.github:hover span:nth-child(3) {
+  border: none;
+  background: #111159;
+}
+
+.content {
+  position: relative;
+  padding: 40px 60px;
+  color: #fff;
+  text-align: center;
+  transition: 0.5s;
+  z-index: 1000;
+}
+
+.content p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.content a {
+  position: relative;
+  display: inline-block;
+  margin-top: 10px;
+  border: 2px solid #fff;
+  padding: 6px 18px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 73% 27% 44% 56% / 49% 44% 56% 51%;
+}
+
+.content a:hover {
+  background: white;
+  color: #333;
+}
+
+@keyframes animate_blobs {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate_2_blobs {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .blobs-container--row {
+    padding: 50px 0;
+  }
+
+  .square {
+    position: relative;
+    margin: 0 10px;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .icon--blob {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+  }
+
+  .content p {
+    font-size: 10px;
+    font-weight: 500;
+  }
+
+  .blobs-container--row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 20px 0;
+    flex-wrap: wrap;
+    gap: 20px;
+    row-gap: 20px;
+  }
+  .content {
+    position: relative;
+    padding: 20px 10;
+    color: #fff;
+    text-align: center;
+    transition: 0.5s;
+    z-index: 1000;
+  }
+  
+}
+
+@media (min-width: 2200px) {
+  .square {
+    position: relative;
+    margin: 0 10px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .icon--blob {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+  }
+  .content {
+    position: relative;
+    padding: 40px 60px;
+    color: #fff;
+    text-align: center;
+    transition: 0.5s;
+    z-index: 1000;
+  }
+  .blobs-container--row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 20px 0;
+    flex-wrap: wrap;
+    gap: 50px;
+    row-gap: 70px;
+  }
+}

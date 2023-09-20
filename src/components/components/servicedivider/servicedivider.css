@@ -1,0 +1,47 @@
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-size: 1000px 100px;
+  animation: animate 4s ease-in-out infinite;
+}
+
+.wave_0 {
+  z-index: 1000;
+  opacity: 1;
+  background-position-x: 400px;
+  animation-delay: 0.25s;
+}
+
+.wave_1 {
+  z-index: 999;
+  opacity: 0.5;
+  background-position-x: 300px;
+  animation-delay: 0.6s;
+}
+
+.wave_2 {
+  z-index: 998;
+  opacity: 0.2;
+  background-position-x: 200px;
+  animation-delay: 0.8s
+}
+
+.wave_3 {
+  z-index: 997;
+  opacity: 0.7;
+  background-position-x: 100px;
+  animation-delay: 1s
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}

@@ -1,0 +1,25 @@
+.ServicesTitle {
+  display: flex;
+  flex-direction: row;
+  font-size: 3rem;
+  font-weight: bold;
+  color: rgb(133, 149, 163);
+  width: 100%;
+
+}
+
+.ServiceCards{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* .OurStory {
+  color: #262626 !important;
+  justify-content: center !important;
+} */
+
+/* span for h2  */
+/* .StoryWord {
+  color: #1b1bcf !important;
+} */

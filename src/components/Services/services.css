@@ -1,0 +1,122 @@
+.color {
+  background-image: radial-gradient(
+    closest-side,
+    rgba(17, 17, 89, 0.1),
+    #ffffff
+  );
+  height: 300px;
+  width: 300px;
+  position: fixed;
+  z-index: 0;
+}
+
+.blur_1 {
+  top: 0;
+  left: 0;
+}
+
+.blur_2 {
+  top: 0;
+  left: -100px;
+}
+
+.blur_3 {
+  top: 100px;
+  right: 50px;
+}
+
+.blur_5 {
+  bottom: 10px;
+}
+
+.service-use--icon {
+  width: 80px;
+  height: 80px;
+}
+
+.service_started--btn {
+  background-color: #111159;
+  margin: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  color: #f0f0f0;
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+}
+
+.service_started--btn:hover {
+  opacity: 0.8;
+}
+
+.service-use--container {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #fafafa;
+}
+
+.service-advantage--section {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 27%,
+    rgba(205, 255, 254, 1) 51%,
+    rgba(255, 255, 255, 1) 73%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  width: 100%;
+  display: grid;
+  padding: 10px;
+  gap: 4rem;
+}
+
+.service-use-upper--title {
+  font-size: 20px;
+  color: #111159;
+  font-weight: 600;
+}
+.service-use--container-upper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+.service-use--section {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 27%,
+    rgba(205, 255, 254, 1) 51%,
+    rgba(255, 255, 255, 1) 73%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  width: 100%;
+  display: grid;
+  padding: 10px;
+  gap: 4rem;
+}
+
+.Get_Contact_Service {
+  width: 70%;
+}
+
+@media (min-width: 40rem) {
+  .service-use--section {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 50px;
+  }
+
+  .service-advantage--section {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 50px;
+  }
+  .Get_Contact_Service {
+    width: 50%;
+  }
+}
+@media (width: 768px) {
+  .Get_Contact_Service {
+    width: 60%;
+  }
+}

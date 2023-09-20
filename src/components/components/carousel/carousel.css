@@ -1,0 +1,39 @@
+@keyframes scrolll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
+.slider {
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: auto;
+  row-gap: 150px;
+}
+.slider .slide-track {
+  animation: scrolll 10s linear infinite;
+  display: flex;
+  gap: 150px;
+  row-gap: 200px;
+  width: calc(280px * 20);
+}
+.slider .slide {
+  width: 200px;
+  height: 100px;
+}
+
+@media (max-width: 375px) {
+  img{
+    width: 80%;
+    height: 80%;
+  }
+  .slider .slide {
+    height: 120px;
+    width: 180px;
+  }
+}

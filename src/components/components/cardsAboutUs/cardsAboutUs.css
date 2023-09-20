@@ -1,0 +1,160 @@
+.second {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 1rem 0;
+  z-index: 10000;
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 19%, rgba(255,205,244,1) 51%, rgba(255,255,255,1) 81%, rgba(255,255,255,1) 100%);
+}
+.myCard {
+  background-color: transparent;
+  width: 220px;
+  height: 300px;
+  perspective: 1000px;
+  margin: 0 auto;
+  margin-top: 5px;
+  flex-direction: column;
+}
+
+.titleCulture {
+  font-size: 1.2em;
+  font-weight: 700;
+  padding: 5rem 0;
+  text-align: center;
+  margin: 0;
+}
+
+.textCulture {
+  font-size: 1em;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+}
+
+.innerCard {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.myCard:hover .innerCard {
+  transform: rotateY(180deg);
+}
+
+.frontSide,
+.backSide {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 1rem;
+  color: white;
+  box-shadow: 0 0 0.3em rgba(255, 255, 255, 0.5);
+  font-weight: 700;
+}
+
+.frontSide {
+  background: linear-gradient(
+    43deg,
+    rgb(65, 88, 208) 0%,
+    #050550 46%,
+    #d42a9e 100%
+  );
+}
+
+.backSide {
+  background: linear-gradient(
+    43deg,
+    rgb(65, 88, 208) 0%,
+    #050550 46%,
+    #d42a9e 100%
+  );
+}
+
+.backSide {
+  transform: rotateY(180deg);
+}
+
+.frontSide .backSide {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "";
+  width: 110%;
+  height: 110%;
+  position: absolute;
+  z-index: -1;
+  border-radius: 1em;
+  filter: blur(20px);
+  animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0.3;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.3;
+  }
+}
+
+@media (width: 375px) {
+  .second {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .titleCulture {
+    font-size: 1.8em;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+  }
+
+  .textCulture {
+    font-size: 1.5em;
+    font-weight: 500;
+    text-align: center;
+    margin: 0;
+  }
+}
+
+@media (width: 768px) {
+  .second {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .titleCulture {
+    font-size: 1.8em;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+  }
+
+  .textCulture {
+    font-size: 1.5em;
+    font-weight: 500;
+    text-align: center;
+    margin: 0;
+  }
+}

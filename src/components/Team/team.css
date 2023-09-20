@@ -1,0 +1,40 @@
+#team {
+  padding: 100px 0;
+}
+
+#team h4 {
+  margin: 5px 0;
+}
+
+#team .team-img {
+  width: 240px;
+  border-radius: 10px;
+  border: #888;
+}
+
+#team .thumbnail {
+  background: transparent;
+  border-radius: 10px;
+}
+
+#team .thumbnail .caption {
+  padding: 10px 0 0;
+  color: #888;
+}
+
+
+.teamParagraph{
+  padding-bottom: 30px;
+  font-size: x-large;
+}
+
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
